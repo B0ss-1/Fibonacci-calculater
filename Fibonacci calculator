@@ -1,0 +1,29 @@
+# Fibonacci calclater
+# Author: Barnaby Walker
+# Date: 12/06/2024
+
+def number_check(question): # This makes it more easy to code
+    error="Put in a number bigger than 2.\n"
+    while True:
+        try:
+            number=int(input(question))
+            if number>2:
+                return number
+            else:
+                print(error)
+        except ValueError:
+            print(error)
+
+total_numbers=number_check("Numbers that you want from the Fibonacci sequence: ") # This shows the thing that you are going to input
+number1=1
+number2=1
+print(number1)
+print(number2)
+numbers_printed=2
+while numbers_printed<total_numbers: # this means that the number will stop when the number of number from the fibonacci is reached
+    number3=number1+number2
+    print(number3)
+    number1=number2
+    number2=number3
+    numbers_printed=numbers_printed+1
+print("Thank you for using this Fibbonacci caulator.") # final line

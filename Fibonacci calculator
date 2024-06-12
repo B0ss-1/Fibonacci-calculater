@@ -3,7 +3,7 @@
 # Date: 12/06/2024
 
 def number_check(question): # This makes it more easy to code
-    error="Put in a number bigger than 2.\n"
+    error="Put in a integer bigger than 2.\n"
     while True:
         try:
             number=int(input(question))
